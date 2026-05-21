@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #183b4e;
+    font-size: 36px;
+}
+.language-box{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: #183b4e;
+}
+textarea{
+    resize: none;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #183b4e;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+button:hover{
+    background: #0f2d3a;
+}
+#successMessage{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}

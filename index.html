@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Recruitment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Job Recruitment Form</h1>
+    <!-- Language Option -->
+    <div class="language-box">
+      <label id="languageLabel">Select Language</label>
+      <select id="language">
+        <option value="english">English</option>
+        <option value="bangla">বাংলা</option>
+      </select>
+    </div>
+    <form id="jobForm">
+      <div class="input-box">
+        <label id="nameLabel">Full Name</label>
+        <input type="text"
+        id="name"
+        placeholder="Enter your full name">
+      </div>
+      <div class="input-box">
+        <label id="emailLabel">Email Address</label>
+        <input type="email"
+        id="email"
+        placeholder="Enter your email">
+      </div>
+      <div class="input-box">
+        <label id="phoneLabel">Phone Number</label>
+        <input type="text"
+        id="phone"
+        placeholder="Enter phone number">
+      </div>
+      <div class="input-box">
+        <label id="genderLabel">Gender</label>
+        <select id="gender">
+          <option>Select Gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label id="addressLabel">Address</label>
+        <input type="text"
+        id="address"
+        placeholder="Enter your address">
+      </div>
+      <div class="input-box">
+        <label id="positionLabel">Select Position</label>
+        <select id="position">
+          <option>Choose Position</option>
+          <option>Web Developer</option>
+          <option>UI Designer</option>
+          <option>Software Engineer</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label id="hireLabel">
+          Why should we hire you?
+        </label>
+        <textarea id="message"
+        rows="5"
+        placeholder="Write something about yourself"></textarea>
+      </div>
+      <div class="input-box">
+        <label id="cvLabel">Upload CV</label>
+        <input type="file">
+      </div>
+      <button type="submit" id="applyBtn">
+        Apply Now
+      </button>
+    </form>
+    <p id="successMessage"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
